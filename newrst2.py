@@ -10,7 +10,7 @@ st.set_page_config(page_title="Imports and Exports Dashboard", layout="wide")
 st.title('Imports and Exports Dataset Dashboard')
 
 # Load the dataset
-IE_dataset = pd.read_csv("C:\\Users\\Rajiv Ranjan\\Downloads\\Imports_Exports_Dataset.csv")
+IE_dataset = pd.read_csv("Imports_Exports_Dataset.csv")
 
 # Ensure 'Date' column is in datetime format
 IE_dataset['Date'] = pd.to_datetime(IE_dataset['Date'], format='%d-%m-%Y', errors='coerce')
